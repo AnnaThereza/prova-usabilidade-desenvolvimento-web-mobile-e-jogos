@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Inscrição - Workshop</title>
+</head>
+
+<body id="formulario">
+    <section>
+        <form>
+            <p id="inscricao"><b>INSCREVA-SE!</b></p>
+            <fieldset>
+                
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome"><br><br>
+                Idade: <input list="idade">
+                <datalist id="idade">
+                    <option value="18-25"></option>
+                    <option value="25-35"></option>
+                    <option value="35-50"></option>
+                </datalist>
+                <br><br>
+                Sexo:
+                <input type="radio" id="feminino" name="sexo" value="F">
+                <label for="feminino">F</label>
+                <input type="radio" id="masculino" name="sexo" value="M">
+                <label for="masculino">M</label>
+                <br><br>
+                <label for="email">E-mail:</label>
+                <input type="text" name="email" id="email"><br><br>
+                <label for="phone">Telefone Celular:</label>
+                <input type="tel" id="phone" name="campo-telefone" pattern="{2}-{5}-{4}"><br><br>
+                Deseja receber nossa newsletter?<br>
+                <input type="radio" id="positivo" name="permissao" value="SIM">
+                <label for="positivo">SIM</label>
+                <input type="radio" id="negativo" name="permissao" value="NAO">
+                <label for="negativo">NAO</label>
+                <br><br>
+                <input type="submit" value="Enviar" id="submit">
+            </fieldset>
+        </form>
+    </section>
+</body>
+
+</html>
