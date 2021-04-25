@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lista de Pokemons Exemplo</title>
+<script src="script.js"></script>
+<style>
+li {
+margin-bottom: 10px;
+}
+#button {
+    background-color: #19bd3f;
+    color: white;
+    padding: 5px 7px;
+    border: #19bd3f solid 1px;
+    border-radius: 4px;
+}
+
+li button {
+font-size: 8px;
+margin-left: 20px;
+color: #0000;
+}
+#delBtn {
+    background-color: red;
+    border: red solid 1px;
+    color: white;
+    border-radius: 4px;
+    padding: 5px 6px;
+}
+</style>
+</head>
+<body>
+
+
+
+<h1>Meus Pokemons</h1>
+
+<div id="groceries">
+<label for="item">Entre com um Novo Pokemon:</label>
+<input type="text" name="item" id="userInput">
+<button id="button" onclick="addItem();"><b>Adicionar um Novo Pokemon</b></button>
+</div>
+<br>
+<div>
+<button id="delBtn" onClick="history.go(0);">Apagar todos</button>
+</div>
+<br>
+
+</body>
+</html>
